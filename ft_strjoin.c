@@ -6,7 +6,7 @@
 /*   By: kebakal <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/21 18:01:08 by kebakal           #+#    #+#             */
-/*   Updated: 2026/10/24 17:35:58 by kebakal          ###   ########.fr       */
+/*   Updated: 2026/10/26 16:23:43 by kebakal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	s2_len = ft_strlen(s2);
 	i = s1_len;
 	j = 0;
-	dest = ft_calloc(s1_len + s2_len + 1, sizeof(char));
+	dest = (char *)ft_calloc(s1_len + s2_len + 1, sizeof(char));
 	if (!dest)
 		return (NULL);
 	dest = (char *)ft_memcpy(dest, s1, s1_len);

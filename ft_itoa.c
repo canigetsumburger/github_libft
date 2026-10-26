@@ -6,7 +6,7 @@
 /*   By: kebakal <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/21 18:17:54 by kebakal           #+#    #+#             */
-/*   Updated: 2026/10/22 20:21:37 by kebakal          ###   ########.fr       */
+/*   Updated: 2026/10/26 18:53:56 by kebakal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ char	*ft_itoa(int nbr)
 	size = nbr_size(nbr);
 	i = size - 1;
 	n_flag = 1;
-	num_str = malloc(sizeof (int) * size + 1);
+	num_str = ft_calloc(size + 1, sizeof(char));
 	if (!num_str)
 		return (NULL);
 	if (nbr < 0)

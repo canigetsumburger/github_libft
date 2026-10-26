@@ -6,7 +6,7 @@
 /*   By: kebakal <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 18:02:22 by kebakal           #+#    #+#             */
-/*   Updated: 2026/10/20 20:00:17 by kebakal          ###   ########.fr       */
+/*   Updated: 2026/10/26 15:14:24 by kebakal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,5 +26,5 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 		pointer[i] = value[i];
 		i++;
 	}
-	return (pointer);
+	return (dest);
 }
