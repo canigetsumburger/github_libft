@@ -25,8 +25,6 @@ char	*ft_strtrim(char const *s1, char const *set)
 	while (ft_strrchr(set, s1[s_len - 1]) != 0)
 		s_len--;
 	trimmed = (char *)ft_calloc(s_len - i, sizeof(char));
-	if (!trimmed)
-		return (NULL);
 	trimmed = (char *)ft_memcpy(trimmed, &s1[i], s_len - i);
 	return (trimmed);
 }
