@@ -20,9 +20,9 @@ char	*ft_strtrim(char const *s1, char const *set)
 
 	i = 0;
 	s_len = ft_strlen(s1);
-	while (ft_strchr(set, s1[i]))
+	while (ft_strchr(set, s1[i]) != 0)
 		i++;
-	while (ft_strrchr(set, s1[s_len - 1]))
+	while (ft_strrchr(set, s1[s_len - 1]) != 0)
 		s_len--;
 	trimmed = (char *)ft_calloc(s_len - i, sizeof(char));
 	if (!trimmed)
